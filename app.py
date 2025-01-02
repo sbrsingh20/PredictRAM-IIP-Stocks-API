@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 # Helper function to fetch economic data from your API
 def get_economic_data(date=None):
-    url = "https://your-api-url.com/economic-data"  # Replace with your API URL
+    url = "https://predictram-iip-stocks-api.streamlit.app/"  # Replace with your API URL
     if date:
         url += f"?date={date}"
     response = requests.get(url)
@@ -13,7 +13,7 @@ def get_economic_data(date=None):
 
 # Helper function to fetch stock data from your API
 def get_stock_data(symbol, start_date=None, end_date=None):
-    url = f"https://your-api-url.com/stock-data?symbol={symbol}"  # Replace with your API URL
+    url = f"https://predictram-iip-stocks-api.streamlit.app/stock-data?symbol={symbol}"  # Replace with your API URL
     if start_date:
         url += f"&start_date={start_date}"
     if end_date:
